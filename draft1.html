@@ -1,0 +1,193 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font: 16px Arial;  
+}
+
+/*the container must be positioned relative:*/
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+input[type=submit] {
+  background-color: rgb(245, 0, 0);
+  color: #fff;
+  cursor: pointer;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+
+}    
+    #myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+</head>     
+<body>
+    
+           <center>
+    <img src="logo.png" alt="logo">
+        
+    <div>
+    <div class="main">
+
+<h2>SDS DATA SHEETS</h2>
+
+    <p>Enter Chemical</p>
+        
+<!--Make sure the form has the autocomplete function switched off:-->
+<form autocomplete="off" action="/action_page.php">
+  <div class="autocomplete" style="width:300px;">
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+    </div>
+</form>
+</div>
+        <br>
+        <div class="main">
+           <ul id="myUL">
+       <li><a href="	pdf.html	.2-.3 MM GLASS BEADS DRAGON	" target="_self">	.2-.3 MM GLASS BEADS DRAGON	</a></li>
+ <li><a href="pdf.html#0118-1PLS" target="_self">	0118-1PLS	</a></li>
+ <li><a href="pdf.html#1 MM GLASS BEADS" target="_self">	1 MM GLASS BEADS	</a></li>
+ <li><a href="pdf.html#1000-Hn Ink Hardener" target="_self">	1000-Hn Ink Hardener	</a></li>
+ <li><a href="pdf.html#135 SOLDERING FLUX" target="_self">	135 SOLDERING FLUX	</a></li>
+ <li><a href="pdf.html#145 Rosin Flux" target="_self">	145 Rosin Flux	</a></li>
+ <li><a href="pdf.html#16-5905 MAKE-UP FLUID" target="_self">	16-5905 MAKE-UP FLUID	</a></li>
+ <li><a href="pdf.html#185 FLUX" target="_self">	185 FLUX	</a></li>
+ <li><a href="pdf.html#186 RMA FLUX" target="_self">	186 RMA FLUX	</a></li>
+ <li><a href="pdf.html#2224-25 WATER SOLUABLE FLUX" target="_self">	2224-25 WATER SOLUABLE FLUX	</a></li>
+ <li><a href="pdf.html#6-1104 CV Sealant" target="_self">	6-1104 CV Sealant	</a></li>
+ <li><a href="pdf.html#7132 White Ink" target="_self">	7132 White Ink	</a></li>
+ <li><a href="pdf.html#7227 Black Ink" target="_self">	7227 Black Ink	</a></li>
+ <li><a href="pdf.html#734 Flowable Sealant Clear" target="_self">	734 Flowable Sealant Clear	</a></li>
+ <li><a href="pdf.html#74010-10" target="_self">	74010-10	</a></li>
+ <li><a href="pdf.html#74010A EPOXY VARNIS	" target="_self">	74010A EPOXY VARNISH	</a></li>
+ <li><a href="pdf.html#8829 White Ink" target="_self">	8829 White Ink	</a></li>
+ <li><a href="pdf.html#A-2 EPOXY ADHESIVE RESIN PART A" target="_self">	A-2 EPOXY ADHESIVE RESIN PART A	</a></li>
+ <li><a href="pdf.html#AC-43 Polyester Resin Modified" target="_self">	AC-43 Polyester Resin Modified	</a></li>
+ <li><a href="pdf.html#Acetone" target="_self">	Acetone	</a></li>
+ <li><a href="pdf.html#AD2003 THINNER" target="_self">	AD2003 THINNER	</a></li>
+ <li><a href="pdf.html#Air Lube #00763" target="_self">	Air Lube #00763	</a></li>
+ <li><a href="pdf.html#Aircraft Paint Remover qar343" target="_self">	Aircraft Paint Remover qar343	</a></li>
+ <li><a href="pdf.html#All Purpose Grease MPG #2" target="_self">	All Purpose Grease MPG #2	</a></li>
+ <li><a href="pdf.html#Alodine 1201" target="_self">	Alodine 1201	</a></li>
+ <li><a href="pdf.html#ALPHA RF800 ROSIN FLUX" target="_self">	ALPHA RF800 ROSIN FLUX	</a></li>
+ <li><a href="pdf.html#Alum Tap cutting fluid #40428" target="_self">	Alum Tap cutting fluid #40428	</a></li>
+ <li><a href="pdf.html#Arathane 5753 A" target="_self">	Arathane 5753 A	</a></li>
+ <li><a href="pdf.html#Arathane 5753 B" target="_self">	Arathane 5753 B	</a></li>
+ <li><a href="pdf.html#Arathane 5753B40" target="_self">	Arathane 5753B40	</a></li>
+ <li><a href="pdf.html#Armor all" target="_self">	Armor all	</a></li>
+ <li><a href="pdf.html#Armstrong A-2" target="_self">	Armstrong A-2	</a></li>
+ <li><a href="pdf.html#Armstrong Activator E" target="_self">	Armstrong Activator E	</a></li>
+ <li><a href="pdf.html#Athletic Striping Paint #790" target="_self">	Athletic Striping Paint #790	</a></li>
+ <li><a href="pdf.html#Atrazine weed killer" target="_self">	Atrazine weed killer	</a></li>
+ 
+ <script>
+    function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+</script>
+               </body>
+            </html>
